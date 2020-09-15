@@ -21,7 +21,7 @@ public:
                     line[i][k]=true; column[j][k]=true; block[i/3][j/3][k]=true;
                     pos++;board[i][j]='1'+k;
                     dfs(board,pos);
-                    pos--;//board[i][j]='.';
+                    pos--; ///board[i][j]='.'; 还不清楚为什么要注释掉这一段
                     line[i][k]=false; column[j][k]= false; block[i/3][j/3][k]= false;
                 }
             }
